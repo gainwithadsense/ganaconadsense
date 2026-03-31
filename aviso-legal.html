@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aviso Legal y Términos de Uso - AdSenseDesdeCero. Condiciones legales de uso de nuestro sitio web.">
+    <meta name="keywords" content="aviso legal, términos de uso, condiciones legales">
+    <meta name="author" content="AdSense Desde Cero">
+    <title>Aviso Legal | AdSenseDesdeCero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500&display=swap');
+        
+        :root {
+            --tw-color-primary: #10b981;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .tailwind-ready {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #10b981;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="tailwind-ready">
+    <!-- HEADER -->
+    <header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto">
+            <div class="px-6 py-5 flex items-center justify-between">
+                
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-2xl shadow-inner">💰</div>
+                    <a href="index.html" class="heading-font text-3xl font-semibold tracking-[-1px] text-gray-900 hover:text-emerald-600">AdSenseDesdeCero</a>
+                </div>
+
+                <!-- Menú Desktop -->
+                <nav class="hidden md:flex items-center gap-x-8 text-base font-medium">
+                    <a href="index.html#inicio" class="nav-link text-gray-700 hover:text-emerald-600">Inicio</a>
+                    <a href="index.html#guia" class="nav-link text-gray-700 hover:text-emerald-600">Guía</a>
+                    <a href="index.html#blog" class="nav-link text-gray-700 hover:text-emerald-600">Blog</a>
+                    <a href="contacto.html" class="nav-link text-gray-700 hover:text-emerald-600">Contacto</a>
+                </nav>
+
+                <!-- CTA Desktop -->
+                <div class="hidden md:flex items-center gap-x-4">
+                    <a href="index.html#guia" 
+                       class="px-6 py-3 text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl flex items-center gap-x-2 shadow-lg shadow-emerald-200">
+                        <span>Empezar ahora</span>
+                        <span class="text-xl">→</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" 
+                        class="md:hidden w-11 h-11 flex items-center justify-center text-3xl text-gray-700">
+                    ☰
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden px-6 pb-6 bg-white border-t">
+                <nav class="flex flex-col gap-y-4 text-base font-medium">
+                    <a href="index.html" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Inicio</a>
+                    <a href="index.html#guia" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Guía</a>
+                    <a href="index.html#blog" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Blog</a>
+                    <a href="contacto.html" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm">
+                <h1 class="text-5xl heading-font font-semibold mb-2">Aviso Legal</h1>
+                <p class="text-gray-600 mb-12">Última actualización: 31 de marzo de 2026</p>
+
+                <div class="prose prose-lg max-w-none text-gray-700 space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">1. Identificación</h2>
+                        <p>
+                            <strong>Nombre del sitio:</strong> AdSenseDesdeCero<br>
+                            <strong>URL:</strong> www.adsensedesdecero.com<br>
+                            <strong>Email de contacto:</strong> hola@adsensedesdecero.com
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">2. Condiciones de uso</h2>
+                        <p>El acceso y uso de este sitio web está sujeto a estos términos y condiciones. Al acceder al sitio, aceptas estar vinculado por estos términos. Si no estás de acuerdo con alguno de estos términos, no debes usar este sitio.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">3. Licencia de contenido</h2>
+                        <p>A menos que se indique lo contrario, AdSenseDesdeCero posee los derechos de autor de todo el material en este sitio web. Todos los derechos de autor están reservados. Puedes ver y imprimir páginas del sitio para uso personal, pero no puedes reproducir, distribuir o transmitir contenido sin permiso previo por escrito.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">4. Exención de responsabilidad</h2>
+                        <p>Este sitio web y su contenido se proporcionan "tal como están" sin garantías de ningún tipo, expresas o implícitas. No garantizamos:</p>
+                        <ul class="list-disc list-inside space-y-3 ml-4">
+                            <li>Que el contenido sea preciso, completo o actual</li>
+                            <li>Que el sitio web funcione sin interrupciones</li>
+                            <li>Que el sitio web esté libre de virus u errores</li>
+                            <li>Que sigas las recomendaciones y obtengas los resultados esperados</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">5. Limitación de responsabilidad</h2>
+                        <p>En ningún caso AdSenseDesdeCero será responsable por daños directos, indirectos, incidentales, especiales o consecuentes que resulten de tu acceso o uso del sitio web, incluso si hemos sido informados de la posibilidad de tales daños.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">6. Contenido de usuario</h2>
+                        <p>Al enviar comentarios, preguntas o contenido a través de este sitio, otorgas a AdSenseDesdeCero el derecho de usar, modificar y reproducir ese contenido en cualquier forma.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">7. Enlaces a otros sitios</h2>
+                        <p>Este sitio puede contener enlaces a sitios web de terceros. No somos responsables del contenido, precisión, legalidad o prácticas de esos sitios. Tu acceso a estos sitios está bajo tu propio riesgo.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">8. Prohibiciones</h2>
+                        <p>No debes utilizar este sitio web para:</p>
+                        <ul class="list-disc list-inside space-y-3 ml-4">
+                            <li>Violar leyes o regulaciones aplicables</li>
+                            <li>Infringir derechos de propiedad intelectual</li>
+                            <li>Transmitir virus, malware u otro código dañino</li>
+                            <li>Acosar, amenazar o difamar a otros</li>
+                            <li>Enviar spam u comunicaciones no solicitadas</li>
+                            <li>Intentar acceder no autorizado a sistemas</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">9. Google AdSense</h2>
+                        <p>Este sitio usa Google AdSense para mostrar anuncios. Google puede usar cookies y otras tecnologías de seguimiento. Consulta la política de Google para más información sobre cómo se utilizan los datos.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">10. Afiliaciones y promociones</h2>
+                        <p>AdSenseDesdeCero puede promover productos o servicios de terceros. No somos responsables de la calidad, seguridad o legalidad de esos productos o servicios. Cualquier compra es entre tú y el proveedor tercero.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">11. Cambios en los términos</h2>
+                        <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios serán efectivos inmediatamente después de su publicación. Tu uso continuado del sitio constituye aceptación de los términos modificados.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">12. Ley aplicable</h2>
+                        <p>Estos términos se rigen por las leyes aplicables de España. Cualquier disputa será resuelta bajo la jurisdicción exclusiva de los tribunales competentes.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4">13. Contacto</h2>
+                        <p>Si tienes preguntas sobre este aviso legal, puedes contactarn a través de:</p>
+                        <ul class="list-disc list-inside space-y-3 ml-4">
+                            <li>Email: hola@adsensedesdecero.com</li>
+                            <li><a href="contacto.html" class="text-emerald-600 hover:underline">Formulario de contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="index.html" class="px-6 py-3 bg-emerald-600 text-white rounded-3xl font-medium hover:bg-emerald-700">← Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-16 mt-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-y-12">
+            <div>
+                <div class="flex items-center gap-x-3 text-white mb-6">
+                    <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center text-2xl">💰</div>
+                    <span class="heading-font text-3xl font-semibold">AdSenseDesdeCero</span>
+                </div>
+                <p class="text-sm leading-relaxed">Enseñando a miles de personas a generar ingresos pasivos con Google AdSense de forma ética y sostenible.</p>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-4 text-gray-500">Enlaces rápidos</p>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="index.html#guia" class="hover:text-white">Guía paso a paso</a></li>
+                    <li><a href="index.html#blog" class="hover:text-white">Blog y recursos</a></li>
+                    <li><a href="https://support.google.com/adsense/answer/48182?hl=es" target="_blank" class="hover:text-white">Política de AdSense</a></li>
+                    <li><a href="https://adsense.google.com/intl/es/start/case-studies/" target="_blank" class="hover:text-white">Casos de éxito</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-4 text-gray-500">Legal</p>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="politica-privacidad.html" class="hover:text-white">Política de privacidad</a></li>
+                    <li><a href="aviso-legal.html" class="hover:text-white">Términos y condiciones</a></li>
+                    <li><a href="aviso-legal.html" class="hover:text-white">Aviso legal</a></li>
+                    <li><a href="politica-cookies.html" class="hover:text-white">Política de cookies</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <p class="text-sm mb-4">© 2026 AdSenseDesdeCero</p>
+                <p class="text-xs">Esta web está optimizada para Google AdSense siguiendo todas las políticas oficiales.<br>
+                No incentivamos clics. Solo enseñamos estrategias éticas.</p>
+                
+                <div class="mt-8 flex gap-x-4">
+                    <div class="text-[22px]">🇪🇸</div>
+                    <div class="text-xs leading-tight">Hecho con ❤️ para hispanohablantes<br>que quieren vivir de internet</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu')
+            menu.classList.toggle('hidden')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - AdSenseDesdeCero. Ponte en contacto con nosotros para consultas sobre Google AdSense y monetización web.">
+    <meta name="keywords" content="contacto, soporte, ayuda, Google AdSense">
+    <meta name="author" content="AdSense Desde Cero">
+    <title>Contacto | AdSenseDesdeCero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500&display=swap');
+        
+        :root {
+            --tw-color-primary: #10b981;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .tailwind-ready {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #10b981;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="tailwind-ready">
+    <!-- HEADER -->
+    <header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto">
+            <div class="px-6 py-5 flex items-center justify-between">
+                
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-2xl shadow-inner">💰</div>
+                    <a href="index.html" class="heading-font text-3xl font-semibold tracking-[-1px] text-gray-900 hover:text-emerald-600">AdSenseDesdeCero</a>
+                </div>
+
+                <!-- Menú Desktop -->
+                <nav class="hidden md:flex items-center gap-x-8 text-base font-medium">
+                    <a href="index.html#inicio" class="nav-link text-gray-700 hover:text-emerald-600">Inicio</a>
+                    <a href="index.html#guia" class="nav-link text-gray-700 hover:text-emerald-600">Guía</a>
+                    <a href="index.html#blog" class="nav-link text-gray-700 hover:text-emerald-600">Blog</a>
+                    <a href="contacto.html" class="nav-link text-gray-700 hover:text-emerald-600">Contacto</a>
+                </nav>
+
+                <!-- CTA Desktop -->
+                <div class="hidden md:flex items-center gap-x-4">
+                    <a href="index.html#guia" 
+                       class="px-6 py-3 text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl flex items-center gap-x-2 shadow-lg shadow-emerald-200">
+                        <span>Empezar ahora</span>
+                        <span class="text-xl">→</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" 
+                        class="md:hidden w-11 h-11 flex items-center justify-center text-3xl text-gray-700">
+                    ☰
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden px-6 pb-6 bg-white border-t">
+                <nav class="flex flex-col gap-y-4 text-base font-medium">
+                    <a href="index.html" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Inicio</a>
+                    <a href="index.html#guia" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Guía</a>
+                    <a href="index.html#blog" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Blog</a>
+                    <a href="contacto.html" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO CONTACTO -->
+    <section class="py-20 bg-gradient-to-br from-emerald-500 via-emerald-400 to-teal-500 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="heading-font text-5xl md:text-6xl font-semibold mb-6">Ponte en contacto</h1>
+            <p class="text-xl text-emerald-100 max-w-2xl mx-auto">¿Tienes dudas sobre cómo ganar dinero con AdSense? Estamos aquí para ayudarte. Te responderemos en menos de 48 horas.</p>
+        </div>
+    </section>
+
+    <!-- CONTENIDO CONTACTO -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Opción 1: Correo -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm text-center">
+                    <div class="text-5xl mb-4">📧</div>
+                    <h3 class="text-2xl font-semibold mb-4">Email directo</h3>
+                    <p class="text-gray-600 mb-6">Envíanos un email con tu consulta</p>
+                    <a href="mailto:hola@adsensedesdecero.com" class="inline-flex px-6 py-3 bg-emerald-600 text-white rounded-3xl font-medium hover:bg-emerald-700">
+                        hola@adsensedesdecero.com
+                    </a>
+                </div>
+
+                <!-- Opción 2: Formulario -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm text-center">
+                    <div class="text-5xl mb-4">📝</div>
+                    <h3 class="text-2xl font-semibold mb-4">Formulario aquí</h3>
+                    <p class="text-gray-600 mb-6">Completa el formulario abajo y nos pondremos en contacto</p>
+                    <a href="#formulario" class="inline-flex px-6 py-3 bg-emerald-600 text-white rounded-3xl font-medium hover:bg-emerald-700">
+                        Ir al formulario ↓
+                    </a>
+                </div>
+
+                <!-- Opción 3: Respuesta rápida -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm text-center">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h3 class="text-2xl font-semibold mb-4">Respuesta rápida</h3>
+                    <p class="text-gray-600 mb-6">Normalmente respondemos en menos de 48 horas</p>
+                    <div class="flex items-center justify-center gap-2 text-emerald-600 font-medium">
+                        <span class="relative h-2 w-2">
+                            <span class="animate-ping absolute h-full w-full rounded-full bg-emerald-600"></span>
+                            <span class="relative h-2 w-2 rounded-full bg-emerald-600"></span>
+                        </span>
+                        Activos en línea
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <div id="formulario" class="bg-white rounded-3xl p-8 md:p-12 shadow-sm">
+                <h2 class="text-4xl heading-font font-semibold mb-2">Envíanos tu mensaje</h2>
+                <p class="text-gray-600 mb-12">Completa el formulario y nos pondremos en contacto lo antes posible.</p>
+
+                <form id="contactForm" class="space-y-6" onsubmit="handleSubmit(event)">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-gray-700">Tu nombre *</label>
+                            <input type="text" id="nombre" placeholder="Juan Pérez" required
+                                   class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:border-emerald-300 focus:ring-2 focus:ring-emerald-100 outline-none text-base transition">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-gray-700">Tu email *</label>
+                            <input type="email" id="email" placeholder="juan@ejemplo.com" required
+                                   class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:border-emerald-300 focus:ring-2 focus:ring-emerald-100 outline-none text-base transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Asunto del mensaje *</label>
+                        <select id="asunto" required
+                                class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:border-emerald-300 focus:ring-2 focus:ring-emerald-100 outline-none text-base transition">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="Consulta sobre AdSense">Consulta sobre AdSense</option>
+                            <option value="Duda sobre la guía">Duda sobre la guía</option>
+                            <option value="Sugerencia">Sugerencia</option>
+                            <option value="Problema técnico">Problema técnico</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Mensaje *</label>
+                        <textarea id="mensaje" rows="6" placeholder="Cuéntanos tu pregunta o consulta..." required
+                                  class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:border-emerald-300 focus:ring-2 focus:ring-emerald-100 outline-none text-base transition resize-none"></textarea>
+                    </div>
+
+                    <div class="bg-blue-50 border border-blue-200 p-4 rounded-2xl">
+                        <label class="flex items-start gap-3 cursor-pointer">
+                            <input type="checkbox" id="privacidad" required class="mt-1 w-4 h-4">
+                            <span class="text-sm text-blue-900">Acepto la <a href="politica-privacidad.html" target="_blank" class="text-emerald-600 hover:underline font-medium">Política de Privacidad</a> y autorizo a recibir respuestas a mi consulta.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit"
+                            class="w-full py-5 bg-emerald-600 text-white text-lg font-semibold rounded-3xl hover:bg-emerald-700 transition shadow-lg hover:shadow-xl" id="submitBtn">
+                        Enviar mensaje
+                    </button>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMsg" class="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-700 text-center hidden">
+                    <p class="font-semibold">✅ ¡Mensaje enviado correctamente!</p>
+                    <p class="text-sm mt-2">Te responderemos en menos de 48 horas al email proporcionado.</p>
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMsg" class="mt-6 p-4 bg-red-50 border border-red-200 rounded-2xl text-red-700 hidden">
+                    <p class="font-semibold">❌ Error al enviar</p>
+                    <p class="text-sm mt-2" id="errorText">Por favor intenta de nuevo</p>
+                </div>
+
+                <p class="text-center text-xs text-gray-400 mt-8">Tu información se guarda de forma segura y solo será usada para responder tu consulta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl heading-font font-semibold text-center mb-12">Preguntas frecuentes sobre contacto</h2>
+            
+            <div class="space-y-4">
+                <details class="group bg-gray-50 rounded-3xl px-8 py-6 border border-gray-200 hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold">
+                        ¿Cuánto tarda en responder mi consulta?
+                        <span class="text-3xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">Normalmente respondemos todas las consultas en menos de 48 horas hábiles. En algunos casos, podemos responder en pocas horas.</p>
+                </details>
+                
+                <details class="group bg-gray-50 rounded-3xl px-8 py-6 border border-gray-200 hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold">
+                        ¿Puedo llamar por teléfono?
+                        <span class="text-3xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">Actualmente no tenemos soporte por teléfono. Comunícate a través del formulario o email y recibirás una respuesta rápida.</p>
+                </details>
+                
+                <details class="group bg-gray-50 rounded-3xl px-8 py-6 border border-gray-200 hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold">
+                        ¿Cómo sé que recibieron mi mensaje?
+                        <span class="text-3xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">Recibirás una confirmación automática en tu email indicando que hemos recibido tu mensaje. La respuesta llegará al mismo correo.</p>
+                </details>
+                
+                <details class="group bg-gray-50 rounded-3xl px-8 py-6 border border-gray-200 hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold">
+                        ¿Ofrecen consultoría personalizada?
+                        <span class="text-3xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">Actualmente nuestro soporte es mediante email y formulario. Enviamos respuestas personalizadas a cada consulta.</p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-3xl px-8 py-6 border border-gray-200 hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold">
+                        ¿Guardan mis datos personales?
+                        <span class="text-3xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">No. Solo usamos tu email para responder tu consulta. Consulta nuestra <a href="politica-privacidad.html" class="text-emerald-600 hover:underline font-medium">Política de Privacidad</a> para más información.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-y-12">
+            <div>
+                <div class="flex items-center gap-x-3 text-white mb-6">
+                    <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center text-2xl">💰</div>
+                    <span class="heading-font text-3xl font-semibold">AdSenseDesdeCero</span>
+                </div>
+                <p class="text-sm leading-relaxed">Enseñando a miles de personas a generar ingresos pasivos con Google AdSense de forma ética y sostenible.</p>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-4 text-gray-500">Enlaces rápidos</p>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="index.html#guia" class="hover:text-white">Guía paso a paso</a></li>
+                    <li><a href="index.html#blog" class="hover:text-white">Blog y recursos</a></li>
+                    <li><a href="https://support.google.com/adsense/answer/48182?hl=es" target="_blank" class="hover:text-white">Política de AdSense</a></li>
+                    <li><a href="https://adsense.google.com/intl/es/start/case-studies/" target="_blank" class="hover:text-white">Casos de éxito</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-4 text-gray-500">Legal</p>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="politica-privacidad.html" class="hover:text-white">Política de privacidad</a></li>
+                    <li><a href="aviso-legal.html" class="hover:text-white">Términos y condiciones</a></li>
+                    <li><a href="aviso-legal.html" class="hover:text-white">Aviso legal</a></li>
+                    <li><a href="politica-cookies.html" class="hover:text-white">Política de cookies</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <p class="text-sm mb-4">© 2026 AdSenseDesdeCero</p>
+                <p class="text-xs">Esta web está optimizada para Google AdSense siguiendo todas las políticas oficiales.<br>
+                No incentivamos clics. Solo enseñamos estrategias éticas.</p>
+                
+                <div class="mt-8 flex gap-x-4">
+                    <div class="text-[22px]">🇪🇸</div>
+                    <div class="text-xs leading-tight">Hecho con ❤️ para hispanohablantes<br>que quieren vivir de internet</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu')
+            menu.classList.toggle('hidden')
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const asunto = document.getElementById('asunto').value;
+            const mensaje = document.getElementById('mensaje').value.trim();
+            const privacidad = document.getElementById('privacidad').checked;
+            
+            const btn = document.getElementById('submitBtn');
+            const originalText = btn.innerHTML;
+            
+            // Validar
+            if (!nombre || !email || !asunto || !mensaje || !privacidad) {
+                document.getElementById('errorMsg').classList.remove('hidden');
+                document.getElementById('errorText').textContent = 'Por favor completa todos los campos y acepta la política de privacidad.';
+                return;
+            }
+            
+            // Loading
+            btn.disabled = true;
+            btn.innerHTML = `
+                <svg class="animate-spin h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                </svg>
+            `;
+            
+            // Limpiar mensajes
+            document.getElementById('errorMsg').classList.add('hidden');
+            document.getElementById('successMsg').classList.add('hidden');
+            
+            // Enviar al backend
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: nombre,
+                    email: email,
+                    subject: asunto,
+                    message: mensaje
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('successMsg').classList.remove('hidden');
+                    document.getElementById('contactForm').reset();
+                } else {
+                    document.getElementById('errorMsg').classList.remove('hidden');
+                    document.getElementById('errorText').textContent = 'Error al enviar el mensaje: ' + (data.error || 'Error desconocido');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('errorMsg').classList.remove('hidden');
+                document.getElementById('errorText').textContent = 'Error de conexión. Inténtalo de nuevo más tarde.';
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            });
+        }
+    </script>
+</body>
+</html>

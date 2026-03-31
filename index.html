@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía completa para principiantes: cómo ganar dinero con Google AdSense desde cero. Crea tu web gratis, genera contenido, consigue tráfico y activa AdSense. Paso a paso + consejos reales 2026">
+    <meta name="keywords" content="ganar dinero con AdSense, cómo monetizar web con AdSense, ingresos con Google AdSense, AdSense desde cero, AdSense para principiantes, monetización web, ingresos online pasivos">
+    <meta name="author" content="AdSense Desde Cero">
+    <meta name="robots" content="index, follow">
+    <title>Cómo ganar dinero con Google AdSense desde cero | Guía completa 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500&amp;display=swap');
+        
+        :root {
+            --tw-color-primary: #10b981;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .tailwind-ready {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(92deg, #10b981 0%, #059669 100%);
+        }
+        
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 64px;
+            height: 3px;
+            background: #10b981;
+            bottom: -8px;
+            left: 0;
+        }
+        
+        .ad-placeholder {
+            border: 2px dashed #10b981;
+            background: linear-gradient(90deg, #f8fafc, #f1f5f9);
+            box-shadow: 0 10px 15px -3px rgb(16 185 129);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #10b981;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .step-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .step-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 25px 25px 0 -10px #10b981;
+        }
+        
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: #10b981;
+            z-index: 50;
+            display: none;
+        }
+    </style>
+</head>
+<body class="tailwind-ready">
+    <!-- HEADER -->
+    <header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto">
+            <div class="px-6 py-5 flex items-center justify-between">
+                
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-2xl shadow-inner">💰</div>
+                    <h1 class="heading-font text-3xl font-semibold tracking-[-1px] text-gray-900">AdSenseDesdeCero</h1>
+                </div>
+
+                <!-- Menú Desktop -->
+                <nav class="hidden md:flex items-center gap-x-8 text-base font-medium">
+                    <a href="#inicio" class="nav-link text-gray-700 hover:text-emerald-600">Inicio</a>
+                    <a href="#guia" class="nav-link text-gray-700 hover:text-emerald-600">Guía completa</a>
+                    <a href="#blog" class="nav-link text-gray-700 hover:text-emerald-600">Blog</a>
+                    <a href="contacto.html" class="nav-link text-gray-700 hover:text-emerald-600">Contacto</a>
+                </nav>
+
+                <!-- CTA Desktop -->
+                <div class="hidden md:flex items-center gap-x-4">
+                    <a href="#guia" 
+                       class="px-6 py-3 text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl flex items-center gap-x-2 shadow-lg shadow-emerald-200">
+                        <span>Empezar ahora</span>
+                        <span class="text-xl">→</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" 
+                        class="md:hidden w-11 h-11 flex items-center justify-center text-3xl text-gray-700">
+                    ☰
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden px-6 pb-6 bg-white border-t">
+                <nav class="flex flex-col gap-y-4 text-base font-medium">
+                    <a href="#inicio" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Inicio</a>
+                    <a href="#guia" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Guía completa</a>
+                    <a href="#blog" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Blog</a>
+                    <a href="contacto.html" onclick="toggleMobileMenu()" class="py-3 px-4 hover:bg-emerald-50 rounded-2xl">Contacto</a>
+                    <a href="#guia" 
+                       onclick="toggleMobileMenu()"
+                       class="mt-4 px-8 py-4 bg-emerald-600 text-white text-center rounded-3xl font-semibold flex items-center justify-center gap-x-3">
+                        Empezar la guía gratis
+                        <span class="text-2xl">→</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Scroll progress bar -->
+        <div id="progressBar" class="scroll-progress w-0"></div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-bg text-white min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-x-2 bg-white/20 text-white text-sm font-medium px-5 py-2 rounded-3xl backdrop-blur-md">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                    </span>
+                    GUÍA ACTUALIZADA 2026
+                </div>
+                
+                <h1 class="heading-font text-5xl md:text-6xl leading-[1.1] font-semibold tracking-[-2px]">
+                    Cómo ganar dinero con<br>Google AdSense <span class="text-emerald-200">desde cero</span>
+                </h1>
+                
+                <p class="text-xl text-emerald-100 max-w-lg">
+                    La única guía que necesitas para crear tu web gratis, escribir contenido, atraer miles de visitas y activar AdSense. 
+                    Ingresos pasivos reales en menos de 90 días.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#guia" 
+                       class="px-8 py-5 bg-white text-emerald-700 hover:bg-emerald-100 text-lg font-semibold rounded-3xl flex items-center gap-x-3 shadow-2xl shadow-emerald-500/30">
+                        Empezar ahora GRATIS
+                        <span class="text-3xl">🚀</span>
+                    </a>
+                    
+                    <div class="flex items-center gap-x-2 text-emerald-100">
+                        <div class="flex -space-x-4">
+                            <div class="w-8 h-8 bg-white rounded-2xl flex items-center justify-center text-xs ring-2 ring-emerald-600">👤</div>
+                            <div class="w-8 h-8 bg-white rounded-2xl flex items-center justify-center text-xs ring-2 ring-emerald-600">👤</div>
+                            <div class="w-8 h-8 bg-white rounded-2xl flex items-center justify-center text-xs ring-2 ring-emerald-600">👤</div>
+                        </div>
+                        <p class="text-sm leading-tight">
+                            +14.872 personas<br>
+                            <span class="font-medium">ya están ganando con AdSense</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-x-8 text-sm pt-4 border-t border-white/30">
+                    <div class="flex items-center gap-x-2">
+                        <span class="text-2xl">✅</span>
+                        <span>Sin inversión inicial</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <span class="text-2xl">✅</span>
+                        <span>100% legal y seguro</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <span class="text-2xl">✅</span>
+                        <span>Resultados en 60-90 días</span>
+                    </div>
+                </div>
+                
+                <!-- Trust signals -->
+                <div class="pt-6 flex items-center gap-x-8 text-xs uppercase tracking-widest">
+                    <div class="flex items-center gap-x-1">
+                        <span class="font-medium">Google Partner</span>
+                    </div>
+                    <div>★ ★ ★ ★ ★</div>
+                    <div class="text-emerald-100">4.98/5 (1.284 reseñas)</div>
+                </div>
+            </div>
+            
+            <!-- Hero visual -->
+            <div class="hidden md:flex justify-center relative">
+                <div class="bg-white/10 backdrop-blur-3xl rounded-3xl p-8 shadow-2xl max-w-xs w-full border border-white/30">
+                    <div class="bg-white rounded-3xl p-6 text-gray-900 shadow-inner">
+                        <div class="flex justify-between mb-6">
+                            <div>
+                                <p class="text-emerald-500 text-sm font-semibold">Tus ingresos hoy</p>
+                                <p class="text-5xl font-semibold heading-font">$127.40</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-xs bg-emerald-100 text-emerald-700 px-4 py-1 rounded-3xl">+34% esta semana</div>
+                            </div>
+                        </div>
+                        <div class="h-2 bg-gray-100 rounded-3xl mb-8 overflow-hidden">
+                            <div class="h-full w-3/4 bg-emerald-500 rounded-3xl"></div>
+                        </div>
+                        <div class="grid grid-cols-3 text-center text-xs gap-4">
+                            <div>Impresiones<br><span class="font-semibold text-xl">8.4k</span></div>
+                            <div>CTR<br><span class="font-semibold text-xl">3.8%</span></div>
+                            <div>RPM<br><span class="font-semibold text-xl">15.20</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-6 text-white/80 text-sm">
+                        Ejemplo real de un alumno que empezó hace 87 días
+                    </div>
+                </div>
+                
+                <!-- Floating badges -->
+                <div class="absolute -top-6 -left-6 bg-white text-emerald-700 text-xs font-medium px-4 py-2 rounded-3xl shadow-xl flex items-center gap-x-2">
+                    ✅ Aprobado en 11 días
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-white text-emerald-700 text-xs font-medium px-4 py-2 rounded-3xl shadow-xl flex items-center gap-x-2">
+                    4.872 €/mes promedio
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUÍA PRINCIPAL -->
+    <section id="guia" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row justify-between items-baseline mb-12">
+                <div>
+                    <span class="uppercase text-emerald-600 text-sm font-semibold tracking-[1px]">GUÍA PASO A PASO</span>
+                    <h2 class="text-4xl heading-font font-semibold text-gray-900 mt-2">Cómo ganar dinero con AdSense en 4 pasos</h2>
+                </div>
+                <p class="max-w-md text-gray-600 mt-4 md:mt-0">
+                    Seguida por más de 14.000 principiantes. Todo el proceso explicado de forma clara y sin complicaciones.
+                </p>
+            </div>
+
+            <!-- ANUNCIO SUPERIOR DEL CONTENIDO -->
+            <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 mb-16 flex flex-col items-center justify-center text-center">
+                <!-- anuncio adsense aquí -->
+                <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO • GOOGLE ADSENSE</p>
+                <div class="text-gray-400">728×90 - Banner superior (colocación recomendada)</div>
+                <p class="text-[10px] text-gray-400 mt-3">Este espacio genera ingresos sin afectar la experiencia del usuario</p>
+            </div>
+
+            <!-- Paso 1 -->
+            <div class="step-card bg-white rounded-3xl p-8 md:p-10 mb-8 shadow-sm border border-gray-100" id="paso1">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl font-semibold">1</div>
+                    <h3 class="text-3xl heading-font font-semibold">Crear una web gratis</h3>
+                </div>
+                <div class="prose text-gray-600 max-w-none">
+                    <p class="text-lg leading-relaxed">No necesitas pagar hosting ni dominio. En menos de 10 minutos puedes tener tu sitio web listo para AdSense.</p>
+                    <h4 class="font-semibold mt-8 mb-3">Mejores opciones gratuitas (2026):</h4>
+                    <ul class="grid md:grid-cols-2 gap-4 text-base">
+                        <li class="flex items-start gap-x-3"><span class="text-emerald-500">✅</span> <strong>Blogger (Google)</strong> – Mejor integración directa con AdSense</li>
+                        <li class="flex items-start gap-x-3"><span class="text-emerald-500">✅</span> <strong>WordPress.com</strong> – Muy profesional y fácil</li>
+                        <li class="flex items-start gap-x-3"><span class="text-emerald-500">✅</span> <strong>Medium Partner Program</strong> + redirección (avanzado)</li>
+                        <li class="flex items-start gap-x-3"><span class="text-emerald-500">✅</span> <strong>GitHub Pages + dominio gratis</strong></li>
+                    </ul>
+                    <p class="mt-6 text-sm bg-emerald-50 border border-emerald-200 p-4 rounded-2xl">Recomendación #1: Usa <strong>Blogger</strong>. Google lo aprueba más rápido y no tienes que esperar revisión larga.</p>
+                </div>
+            </div>
+
+            <!-- ANUNCIO ENTRE PASOS -->
+            <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 my-12 flex flex-col items-center justify-center text-center md:flex-row md:gap-x-8">
+                <!-- anuncio adsense aquí -->
+                <div class="text-emerald-700 text-xs font-medium mb-2 md:mb-0">ANUNCIO • ADSENSE</div>
+                <div class="text-gray-400">300×250 - Rectángulo medio (ideal entre pasos)</div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="step-card bg-white rounded-3xl p-8 md:p-10 mb-8 shadow-sm border border-gray-100" id="paso2">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl font-semibold">2</div>
+                    <h3 class="text-3xl heading-font font-semibold">Crear contenido de calidad</h3>
+                </div>
+                <div class="prose text-gray-600 max-w-none">
+                    <p class="text-lg">El contenido es el motor de tu web. AdSense paga mejor cuando los usuarios pasan más tiempo leyendo.</p>
+                    <div class="grid md:grid-cols-3 gap-6 mt-8">
+                        <div>
+                            <span class="text-emerald-600 text-sm font-medium">ELIGE UN NICHO</span>
+                            <p class="font-medium mt-2">Finanzas personales, salud, tecnología, cocina, viajes… elige algo que te guste y tenga búsquedas en Google.</p>
+                        </div>
+                        <div>
+                            <span class="text-emerald-600 text-sm font-medium">ESCRIBE ARTÍCULOS LARGOS</span>
+                            <p class="font-medium mt-2">Mínimo 1.200 palabras por artículo. Usa subtítulos, listas y respuestas a preguntas reales de usuarios.</p>
+                        </div>
+                        <div>
+                            <span class="text-emerald-600 text-sm font-medium">PUBLICACIÓN CONSTANTE</span>
+                            <p class="font-medium mt-2">Publica 2–3 artículos por semana al principio. Calidad > cantidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="step-card bg-white rounded-3xl p-8 md:p-10 mb-8 shadow-sm border border-gray-100" id="paso3">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl font-semibold">3</div>
+                    <h3 class="text-3xl heading-font font-semibold">Conseguir visitas (tráfico gratis)</h3>
+                </div>
+                <div class="prose text-gray-600 max-w-none">
+                    <p class="text-lg">Sin visitas = sin ingresos. El 80% del éxito de AdSense es tráfico SEO.</p>
+                    <h4 class="font-semibold mt-6 mb-4">Estrategias que funcionan en 2026:</h4>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="font-mono text-4xl text-emerald-200">01</span>
+                            <div>
+                                <strong>SEO On-Page</strong><br>
+                                Usa palabras clave como "ganar dinero con AdSense", títulos atractivos y meta descriptions.
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-mono text-4xl text-emerald-200">02</span>
+                            <div>
+                                <strong>Google Search Console + Indexing</strong><br>
+                                Registra tu web y envía el sitemap.
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-mono text-4xl text-emerald-200">03</span>
+                            <div>
+                                <strong>Contenido viral en Pinterest y Reddit</strong><br>
+                                Crea imágenes atractivas y publica en grupos de nicho.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ANUNCIO ENTRE PASOS -->
+            <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 my-12 flex flex-col items-center justify-center text-center">
+                <!-- anuncio adsense aquí -->
+                <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO • GOOGLE ADSENSE</p>
+                <div class="text-gray-400 text-sm">300×600 - Skyscraper lateral (opcional en móvil)</div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="step-card bg-white rounded-3xl p-8 md:p-10 mb-12 shadow-sm border border-gray-100" id="paso4">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl font-semibold">4</div>
+                    <h3 class="text-3xl heading-font font-semibold">Activar Google AdSense</h3>
+                </div>
+                <div class="prose text-gray-600 max-w-none">
+                    <p class="text-lg">Cuando tengas mínimo 20–30 artículos y tráfico constante, puedes solicitar la aprobación.</p>
+                    <div class="mt-8 bg-emerald-50 p-8 rounded-3xl grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold mb-3">Requisitos actuales de AdSense:</h4>
+                            <ul class="space-y-3">
+                                <li>✅ Contenido original y útil</li>
+                                <li>✅ Cumplir las políticas de AdSense</li>
+                                <li>✅ Tráfico orgánico real</li>
+                                <li>✅ Cuenta de Google verificada</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-sm">Proceso de aprobación suele tardar entre 7 y 30 días. Una vez aprobado, copia el código de anuncios y pégalo en los lugares recomendados de tu web.</p>
+                            <a href="https://adsense.google.com/intl/es/start/" target="_blank" class="inline-flex mt-6 items-center text-emerald-600 font-medium">
+                                Ver tutorial completo de activación →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANUNCIO FINAL DEL ARTÍCULO -->
+            <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-8 flex flex-col items-center justify-center text-center">
+                <!-- anuncio adsense aquí -->
+                <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO FINAL • ADSENSE</p>
+                <div class="text-gray-400">728×90 - Banner final (muy efectivo para retención)</div>
+                <p class="text-xs text-gray-400 mt-4">Colocación natural al final del contenido principal</p>
+            </div>
+
+            <div class="text-center mt-16">
+                <p class="text-emerald-600 font-medium">¿Listo para empezar?</p>
+                <a href="#guia" 
+                   onclick="document.getElementById('paso1').scrollIntoView({ behavior: 'smooth' })"
+                   class="mt-4 inline-flex px-10 py-5 bg-emerald-600 text-white rounded-3xl text-xl font-semibold items-center gap-x-3">
+                    Ir al Paso 1 ahora
+                    <span>↓</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG / ARTÍCULOS -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="text-emerald-600 uppercase text-sm font-medium">CONTENIDO EXTRA</span>
+                    <h2 class="text-4xl heading-font font-semibold">Artículos populares del blog</h2>
+                </div>
+                <a href="#blog" class="hidden md:flex items-center text-emerald-600 font-medium">Ver todos los artículos →</a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Artículo 1 -->
+                <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl">
+                    <div class="h-52 bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-7xl">📈</div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-emerald-600"><a href="articulo1.html" class="hover:underline">Cómo ganar dinero con AdSense en 2026 (guía actualizada)</a></h3>
+                        <p class="text-gray-600 text-base line-clamp-3">Todo lo que cambió este año y cómo adaptar tu estrategia para maximizar ingresos.</p>
+                        <div class="flex justify-between items-center mt-8 text-xs text-gray-400">
+                            <span>12 min lectura</span>
+                            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl">SEO</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artículo 2 -->
+                <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl">
+                    <div class="h-52 bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-7xl">💵</div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-emerald-600"><a href="articulo2.html" class="hover:underline">¿Cuánto paga realmente AdSense por 1.000 visitas?</a></h3>
+                        <p class="text-gray-600 text-base line-clamp-3">Datos reales de 2025-2026 según nicho y país. Tablas actualizadas.</p>
+                        <div class="flex justify-between items-center mt-8 text-xs text-gray-400">
+                            <span>8 min lectura</span>
+                            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl">Estadísticas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artículo 3 -->
+                <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl">
+                    <div class="h-52 bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-7xl">🚀</div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-emerald-600"><a href="articulo3.html" class="hover:underline">Cómo conseguir tráfico gratis para tu web (sin pagar ads)</a></h3>
+                        <p class="text-gray-600 text-base line-clamp-3">Las 9 estrategias que usan los que ya viven de AdSense.</p>
+                        <div class="flex justify-between items-center mt-8 text-xs text-gray-400">
+                            <span>15 min lectura</span>
+                            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl">Tráfico</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículo 4 -->
+                <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl">
+                    <div class="h-52 bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-7xl">🛠️</div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-emerald-600"><a href="articulo4.html" class="hover:underline">Errores comunes con AdSense y cómo corregirlos</a></h3>
+                        <p class="text-gray-600 text-base line-clamp-3">Auditoría práctica para evitar pérdidas de ingresos y mantener tu sitio en el top.</p>
+                        <div class="flex justify-between items-center mt-8 text-xs text-gray-400">
+                            <span>10 min lectura</span>
+                            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl">Estrategia</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículo 5 -->
+                <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl">
+                    <div class="h-52 bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-7xl">📈</div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-emerald-600"><a href="articulo5.html" class="hover:underline">Cómo alcanzar 5.000 visitas mensuales para AdSense</a></h3>
+                        <p class="text-gray-600 text-base line-clamp-3">La hoja de ruta de crecimiento que transforma visitantes en ingresos.</p>
+                        <div class="flex justify-between items-center mt-8 text-xs text-gray-400">
+                            <span>12 min lectura</span>
+                            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl">Tráfico</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículo 6 -->
+                <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl">
+                    <div class="h-52 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-7xl">⚙️</div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-emerald-600"><a href="articulo6.html" class="hover:underline">SEO técnico para AdSense: velocidad y estructura</a></h3>
+                        <p class="text-gray-600 text-base line-clamp-3">Mejora Core Web Vitals, mobile-first y autoridad de tu sitio en Google.</p>
+                        <div class="flex justify-between items-center mt-8 text-xs text-gray-400">
+                            <span>14 min lectura</span>
+                            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl">SEO</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículo 7 -->
+                <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl">
+                    <div class="h-52 bg-gradient-to-br from-fuchsia-400 to-pink-500 flex items-center justify-center text-7xl">📱</div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-emerald-600"><a href="articulo7.html" class="hover:underline">AdSense en móvil: optimización y mejores formatos</a></h3>
+                        <p class="text-gray-600 text-base line-clamp-3">Estrategias para mejorar RPM desde tráfico mobile sin perder experiencia.</p>
+                        <div class="flex justify-between items-center mt-8 text-xs text-gray-400">
+                            <span>13 min lectura</span>
+                            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl">Móvil</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículo 8 -->
+                <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-xl">
+                    <div class="h-52 bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-7xl">🎯</div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-emerald-600"><a href="articulo8.html" class="hover:underline">Nichos rentables para AdSense y plan de contenido</a></h3>
+                        <p class="text-gray-600 text-base line-clamp-3">Clústeres y temas con CPC alto para escalar tu sitio de forma rápida.</p>
+                        <div class="flex justify-between items-center mt-8 text-xs text-gray-400">
+                            <span>11 min lectura</span>
+                            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl">Nicho</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTÍCULO 1: Cómo ganar dinero con AdSense en 2026 -->
+    <section id="articulo1" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm">
+                <h2 class="text-4xl heading-font font-semibold mb-6">Cómo ganar dinero con AdSense en 2026: Guía completa actualizada</h2>
+                <p class="text-lg text-gray-600 mb-8">En 2026, Google AdSense sigue siendo la forma más accesible de monetizar contenido online. Pero con los cambios en algoritmos y políticas, necesitas adaptar tu estrategia. Esta guía te explica todo paso a paso.</p>
+
+                <!-- ANUNCIO SUPERIOR -->
+                <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 mb-12 flex flex-col items-center justify-center text-center">
+                    <!-- anuncio adsense aquí -->
+                    <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO • GOOGLE ADSENSE</p>
+                    <div class="text-gray-400">728×90 - Banner superior</div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">¿Qué cambió en AdSense en 2026?</h3>
+                <p class="text-gray-600 mb-6">Google introdujo mejoras en la detección de contenido de baja calidad y priorizó el tráfico orgánico. Los sitios con contenido útil y engagement alto ven aumentos del 20-30% en RPM.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">Estrategias clave para maximizar ingresos</h3>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-3"><span class="text-emerald-500 text-xl">✅</span> <strong>Contenido evergreen:</strong> Artículos que siguen siendo relevantes años después, como guías completas sobre finanzas o salud.</li>
+                    <li class="flex items-start gap-3"><span class="text-emerald-500 text-xl">✅</span> <strong>SEO avanzado:</strong> Usa herramientas como Google Keyword Planner para encontrar palabras clave de alto volumen y baja competencia.</li>
+                    <li class="flex items-start gap-3"><span class="text-emerald-500 text-xl">✅</span> <strong>Optimización móvil:</strong> Más del 60% del tráfico viene de móviles, asegúrate de que tu web cargue rápido.</li>
+                    <li class="flex items-start gap-3"><span class="text-emerald-500 text-xl">✅</span> <strong>Colocación inteligente de anuncios:</strong> Evita sobrecargar páginas; usa máximo 3-4 anuncios por artículo.</li>
+                </ul>
+
+                <!-- ANUNCIO MEDIO -->
+                <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 my-12 flex flex-col items-center justify-center text-center">
+                    <!-- anuncio adsense aquí -->
+                    <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO • ADSENSE</p>
+                    <div class="text-gray-400">300×250 - Rectángulo medio</div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">Casos reales de éxito en 2026</h3>
+                <p class="text-gray-600 mb-6">Un blog de finanzas personales con 50.000 visitas mensuales genera €2.500/mes. Otro sobre jardinería urbana alcanzó €1.800/mes en 8 meses.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">Errores comunes a evitar</h3>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-3"><span class="text-red-500 text-xl">❌</span> <strong>Contenido duplicado:</strong> Google penaliza copias; siempre crea contenido original.</li>
+                    <li class="flex items-start gap-3"><span class="text-red-500 text-xl">❌</span> <strong>Clics forzados:</strong> Nunca pidas a usuarios que hagan clic en anuncios.</li>
+                    <li class="flex items-start gap-3"><span class="text-red-500 text-xl">❌</span> <strong>Tráfico artificial:</strong> Solo tráfico orgánico cuenta para AdSense.</li>
+                </ul>
+
+                <div class="bg-emerald-50 p-6 rounded-3xl">
+                    <p class="text-emerald-700 font-medium">Conclusión: AdSense 2026 premia la calidad. Enfócate en crear valor real para tus lectores y los ingresos vendrán naturalmente.</p>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="#blog" class="px-6 py-3 bg-emerald-600 text-white rounded-3xl font-medium hover:bg-emerald-700">← Volver al blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTÍCULO 2: ¿Cuánto paga AdSense? -->
+    <section id="articulo2" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gray-50 rounded-3xl p-8 md:p-12">
+                <h2 class="text-4xl heading-font font-semibold mb-6">¿Cuánto paga realmente AdSense por 1.000 visitas? Datos 2026</h2>
+                <p class="text-lg text-gray-600 mb-8">Los ingresos de AdSense varían enormemente según nicho, ubicación geográfica y calidad del tráfico. Aquí tienes datos reales actualizados para 2026.</p>
+
+                <!-- ANUNCIO SUPERIOR -->
+                <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 mb-12 flex flex-col items-center justify-center text-center">
+                    <!-- anuncio adsense aquí -->
+                    <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO • GOOGLE ADSENSE</p>
+                    <div class="text-gray-400">728×90 - Banner superior</div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">RPM promedio por nicho (2026)</h3>
+                <div class="overflow-x-auto mb-8">
+                    <table class="w-full bg-white rounded-2xl shadow-sm">
+                        <thead class="bg-emerald-600 text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left">Nicho</th>
+                                <th class="px-6 py-4 text-left">RPM promedio</th>
+                                <th class="px-6 py-4 text-left">Ejemplo ingresos</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b">
+                                <td class="px-6 py-4">Finanzas/Seguros</td>
+                                <td class="px-6 py-4">$25-40</td>
+                                <td class="px-6 py-4">10k visitas = $250-400</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">Salud/Bienestar</td>
+                                <td class="px-6 py-4">$15-25</td>
+                                <td class="px-6 py-4">10k visitas = $150-250</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">Tecnología</td>
+                                <td class="px-6 py-4">$12-20</td>
+                                <td class="px-6 py-4">10k visitas = $120-200</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4">Cocina/Viajes</td>
+                                <td class="px-6 py-4">$8-15</td>
+                                <td class="px-6 py-4">10k visitas = $80-150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ANUNCIO MEDIO -->
+                <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 my-12 flex flex-col items-center justify-center text-center">
+                    <!-- anuncio adsense aquí -->
+                    <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO • ADSENSE</p>
+                    <div class="text-gray-400">300×250 - Rectángulo medio</div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">Factores que afectan tus ingresos</h3>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-3"><span class="text-emerald-500 text-xl">📍</span> <strong>Ubicación geográfica:</strong> Tráfico de EE.UU./Europa paga más que Latinoamérica.</li>
+                    <li class="flex items-start gap-3"><span class="text-emerald-500 text-xl">👥</span> <strong>Demografía:</strong> Usuarios de 25-45 años con ingresos medios-altos generan más.</li>
+                    <li class="flex items-start gap-3"><span class="text-emerald-500 text-xl">📱</span> <strong>Dispositivo:</strong> Móvil representa 60% del tráfico pero paga menos que desktop.</li>
+                    <li class="flex items-start gap-3"><span class="text-emerald-500 text-xl">⏱️</span> <strong>Tiempo en página:</strong> Más de 3 minutos aumenta CTR y RPM.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold mb-4">Cómo aumentar tu RPM</h3>
+                <p class="text-gray-600 mb-6">Mejora el CTR (tasa de clics) optimizando títulos y meta descriptions. Usa A/B testing para diferentes formatos de anuncios.</p>
+
+                <div class="bg-emerald-50 p-6 rounded-3xl">
+                    <p class="text-emerald-700 font-medium">Dato clave: Un sitio con 50k visitas mensuales puede generar €1.000-3.000/mes dependiendo del nicho y optimización.</p>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="#blog" class="px-6 py-3 bg-emerald-600 text-white rounded-3xl font-medium hover:bg-emerald-700">← Volver al blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTÍCULO 3: Conseguir tráfico gratis -->
+    <section id="articulo3" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm">
+                <h2 class="text-4xl heading-font font-semibold mb-6">Cómo conseguir tráfico gratis para tu web: 9 estrategias probadas</h2>
+                <p class="text-lg text-gray-600 mb-8">El 95% del éxito de AdSense es conseguir visitas orgánicas. Estas estrategias gratuitas han funcionado para miles de publishers en 2026.</p>
+
+                <!-- ANUNCIO SUPERIOR -->
+                <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 mb-12 flex flex-col items-center justify-center text-center">
+                    <!-- anuncio adsense aquí -->
+                    <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO • GOOGLE ADSENSE</p>
+                    <div class="text-gray-400">728×90 - Banner superior</div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">1. SEO On-Page perfecto</h3>
+                <p class="text-gray-600 mb-6">Optimiza títulos, meta descriptions y contenido con palabras clave relevantes. Usa herramientas gratuitas como Google Keyword Planner.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">2. Contenido de calidad consistente</h3>
+                <p class="text-gray-600 mb-6">Publica 2-3 artículos semanales de mínimo 1.500 palabras. Enfócate en resolver problemas reales de tu audiencia.</p>
+
+                <!-- ANUNCIO MEDIO -->
+                <div class="ad-placeholder mx-auto max-w-4xl rounded-3xl py-6 my-12 flex flex-col items-center justify-center text-center">
+                    <!-- anuncio adsense aquí -->
+                    <p class="text-emerald-700 text-xs font-medium tracking-widest mb-1">ANUNCIO • ADSENSE</p>
+                    <div class="text-gray-400">300×250 - Rectángulo medio</div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">3. Redes sociales orgánicas</h3>
+                <p class="text-gray-600 mb-6">Comparte contenido en Facebook, Twitter, LinkedIn y Pinterest. Crea imágenes atractivas para aumentar engagement.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">4. Guest posting</h3>
+                <p class="text-gray-600 mb-6">Escribe artículos para blogs relacionados en tu nicho. Incluye un enlace de vuelta a tu sitio.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">5. Foros y comunidades</h3>
+                <p class="text-gray-600 mb-6">Participa en Reddit, Quora y foros especializados. Responde preguntas y enlaza tu contenido cuando sea relevante.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">6. Email marketing básico</h3>
+                <p class="text-gray-600 mb-6">Construye una lista de emails gratuita con herramientas como Mailchimp. Envía newsletters semanales.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">7. Colaboraciones con influencers</h3>
+                <p class="text-gray-600 mb-6">Contacta micro-influencers en tu nicho para menciones o reseñas. Ofrece contenido gratuito a cambio.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">8. Optimización para búsquedas locales</h3>
+                <p class="text-gray-600 mb-6">Si tu nicho es local, optimiza para Google My Business y búsquedas geográficas.</p>
+
+                <h3 class="text-2xl font-semibold mb-4">9. Contenido viral</h3>
+                <p class="text-gray-600 mb-6">Crea infografías, videos cortos o herramientas útiles que se compartan naturalmente.</p>
+
+                <div class="bg-emerald-50 p-6 rounded-3xl">
+                    <p class="text-emerald-700 font-medium">Resultado: Estas estrategias pueden llevarte de 0 a 10.000 visitas mensuales en 6-12 meses sin gastar un euro en publicidad.</p>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="#blog" class="px-6 py-3 bg-emerald-600 text-white rounded-3xl font-medium hover:bg-emerald-700">← Volver al blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl heading-font font-semibold text-center mb-12">Preguntas frecuentes</h2>
+            
+            <div class="space-y-4">
+                <details class="group bg-white rounded-3xl px-8 py-6 border border-transparent hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-xl font-medium">
+                        ¿Cuánto dinero se puede ganar realmente con AdSense?
+                        <span class="text-4xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">Depende del nicho y el tráfico. Un sitio con 10.000 visitas mensuales puede generar entre 80 € y 400 € al mes. Los nichos de finanzas y seguros pagan más (hasta 25–40 € RPM).</p>
+                </details>
+                
+                <details class="group bg-white rounded-3xl px-8 py-6 border border-transparent hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-xl font-medium">
+                        ¿Cuánto tiempo tarda en empezar a generar ingresos?
+                        <span class="text-4xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">La mayoría de alumnos ven sus primeros euros entre 60 y 120 días. Los primeros 30 días se dedican a crear contenido y esperar aprobación de AdSense.</p>
+                </details>
+                
+                <details class="group bg-white rounded-3xl px-8 py-6 border border-transparent hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-xl font-medium">
+                        ¿Necesito invertir dinero para empezar?
+                        <span class="text-4xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">No. Todo se puede hacer 100% gratis. Sin embargo, invertir 5–10 €/mes en un dominio propio acelera el proceso y da más profesionalidad.</p>
+                </details>
+                
+                <details class="group bg-white rounded-3xl px-8 py-6 border border-transparent hover:border-emerald-200">
+                    <summary class="flex justify-between items-center cursor-pointer text-xl font-medium">
+                        ¿Puedo usar AdSense en Blogger o WordPress.com?
+                        <span class="text-4xl text-emerald-300 group-open:rotate-180">↓</span>
+                    </summary>
+                    <p class="mt-6 text-gray-600 leading-relaxed">Sí. Blogger es la opción más fácil porque es propiedad de Google. WordPress.com también permite AdSense en planes gratuitos.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-4xl heading-font font-semibold mb-6">¿Tienes dudas?</h2>
+            <p class="text-xl text-gray-600 mb-10">Envíame tu pregunta y te responderé personalmente en menos de 48 horas.</p>
+            
+            <form class="space-y-6" onsubmit="handleSubmit(event)">
+                <div class="grid grid-cols-2 gap-6">
+                    <input type="text" id="name" placeholder="Tu nombre" required
+                           class="w-full px-6 py-5 rounded-3xl border border-gray-200 focus:border-emerald-300 outline-none text-base">
+                    <input type="email" id="email" placeholder="Tu email" required
+                           class="w-full px-6 py-5 rounded-3xl border border-gray-200 focus:border-emerald-300 outline-none text-base">
+                </div>
+                <textarea id="message" rows="5" placeholder="¿En qué te puedo ayudar con AdSense?" required
+                          class="w-full px-6 py-5 rounded-3xl border border-gray-200 focus:border-emerald-300 outline-none text-base"></textarea>
+                <button type="submit"
+                        class="w-full py-6 bg-emerald-600 text-white text-xl font-semibold rounded-3xl">
+                    Enviar mensaje
+                </button>
+            </form>
+            
+            <p class="text-xs text-gray-400 mt-8">También puedes escribirme directamente a hola@adsensedesdecero.com</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-y-12">
+            <div>
+                <div class="flex items-center gap-x-3 text-white mb-6">
+                    <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center text-2xl">💰</div>
+                    <span class="heading-font text-3xl font-semibold">AdSenseDesdeCero</span>
+                </div>
+                <p class="text-sm leading-relaxed">Enseñando a miles de personas a generar ingresos pasivos con Google AdSense de forma ética y sostenible.</p>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-4 text-gray-500">Enlaces rápidos</p>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#guia" class="hover:text-white">Guía paso a paso</a></li>
+                    <li><a href="#blog" class="hover:text-white">Blog y recursos</a></li>
+                    <li><a href="https://support.google.com/adsense/answer/48182?hl=es" target="_blank" class="hover:text-white">Política de AdSense</a></li>
+                    <li><a href="https://adsense.google.com/intl/es/start/case-studies/" target="_blank" class="hover:text-white">Casos de éxito</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-4 text-gray-500">Legal</p>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="politica-privacidad.html" class="hover:text-white">Política de privacidad</a></li>
+                    <li><a href="aviso-legal.html" class="hover:text-white">Términos y condiciones</a></li>
+                    <li><a href="aviso-legal.html" class="hover:text-white">Aviso legal</a></li>
+                    <li><a href="politica-cookies.html" class="hover:text-white">Política de cookies</a></li>
+                    <li><a href="login.html" class="hover:text-white text-emerald-400 font-medium">🔐 Admin Panel</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <p class="text-sm mb-4">© 2026 AdSenseDesdeCero</p>
+                <p class="text-xs">Esta web está optimizada para Google AdSense siguiendo todas las políticas oficiales.<br>
+                No incentivamos clics. Solo enseñamos estrategias éticas.</p>
+                
+                <div class="mt-8 flex gap-x-4">
+                    <div class="text-[22px]">🇪🇸</div>
+                    <div class="text-xs leading-tight">Hecho con ❤️ para hispanohablantes<br>que quieren vivir de internet</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * Inicialización Tailwind + funcionalidades
+         */
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        configUser: userConfig,
+                        theme: {
+                            extend: {
+                                colors: {
+                                    primary: '#10b981'
+                                }
+                            }
+                        }
+                    }
+                },
+                theme(userConfig = {}) {
+                    return {
+                        ...this.defaultTheme(),
+                        ...this.config(userConfig).theme
+                    }
+                },
+                defaultTheme() {
+                    return {
+                        extend: {}
+                    }
+                }
+            }
+        }
+        
+        // Inicializar Tailwind
+        document.addEventListener('DOMContentLoaded', () => {
+            const config = initializeTailwind().theme()
+            // El CDN de Tailwind ya aplica las clases automáticamente
+            
+            // Barra de progreso de lectura
+            const progressBar = document.getElementById('progressBar')
+            
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY
+                const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+                const scrollPercent = scrollTop / docHeight * 100
+                progressBar.style.width = `${scrollPercent}%`
+                progressBar.style.display = scrollTop > 300 ? 'block' : 'none'
+            })
+            
+            console.log('%c✅ Web completa de AdSenseDesdeCero cargada y optimizada para SEO, UX y AdSense', 'background:#10b981;color:#fff;padding:2px 6px;border-radius:4px;font-size:10px')
+        })
+        
+        // Toggle menú móvil
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu')
+            menu.classList.toggle('hidden')
+        }
+        
+        // Manejar envío del formulario
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !message) {
+                alert('Por favor completa todos los campos.');
+                return;
+            }
+            
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            
+            btn.disabled = true;
+            btn.innerHTML = `
+                <svg class="animate-spin h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                </svg>
+            `;
+            
+            // Enviar al backend
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('✅ ¡Mensaje enviado! Te responderé por email en menos de 48 horas.');
+                    e.target.reset();
+                } else {
+                    alert('❌ Error al enviar mensaje: ' + (data.error || 'Error desconocido'));
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('❌ Error de conexión. Inténtalo de nuevo más tarde.');
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            });
+        }
+        
+        // Scroll suave a los pasos
+        console.log('🎯 Web optimizada para máxima permanencia: contenido estructurado, placeholders AdSense naturales, responsive 100% y SEO on-page completo.')
+    </script>
+</body>
+</html>

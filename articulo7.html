@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía para optimizar AdSense en móviles. Diseño responsive, bloques de anuncios adecuados y pruebas para maximizar ingresos desde smartphone." />
+    <meta name="keywords" content="AdSense móvil, optimizar anuncios móviles, responsive, ingresos móvil, AdSense 2026" />
+    <meta name="robots" content="index, follow" />
+    <title>AdSense móvil: optimiza ingresos de tráfico mobile | AdSenseDesdeCero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .ad-placeholder {
+            border: 2px dashed #10b981;
+            background: linear-gradient(90deg, #f8fafc, #f1f5f9);
+            padding: 20px;
+            border-radius: 18px;
+            text-align: center;
+            margin: 24px 0;
+        }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <h1 class="heading-font text-2xl font-bold text-emerald-700">AdSenseDesdeCero</h1>
+            <nav class="space-x-4 text-sm font-medium">
+                <a href="index.html" class="text-slate-600 hover:text-emerald-600">Inicio</a>
+                <a href="index.html#guia" class="text-slate-600 hover:text-emerald-600">Guía</a>
+                <a href="index.html#blog" class="text-slate-600 hover:text-emerald-600">Blog</a>
+                <a href="index.html#contacto" class="text-slate-600 hover:text-emerald-600">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <article class="bg-white rounded-3xl p-8 shadow-lg">
+            <h1 class="text-4xl heading-font font-bold mb-4">AdSense en móvil: optimiza bloques, UX y RPM</h1>
+            <p class="text-slate-600 mb-6">Más del 70% del tráfico viene desde móvil. Saber cómo colocar anuncios y estructurar contenido mobile-friendly puede duplicar tus ingresos de AdSense.</p>
+
+            <h2 class="text-2xl font-semibold mb-3">1. Diseño mobile-first para AdSense</h2>
+            <p class="mb-4">Cuando el diseño se adapta bien, los usuarios navegan más tiempo y el RPM sube. Usa un layout cómodo, espaciado y botones grandes.</p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li>Anchura de contenido limpia en 100%-320px.</li>
+                <li>Encabezados con alto contraste y párrafos cortos.</li>
+                <li>CTA visibles pero discretos.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">1.1 Velocidad en móviles</h3>
+            <p class="mb-4">Elimina Javascript innecesario y reduce requests. Usar lazy-loading en imágenes y bloquear scripts de terceros críticamente con `async` o `defer`.</p>
+
+            <h2 class="text-2xl font-semibold mb-3">2. Colocación de anuncios para móvil</h2>
+            <p class="mb-4">Hay 3 zonas ideales sin violar políticas:</p>
+            <ol class="list-decimal pl-6 space-y-2 mb-6">
+                <li>Parte superior del contenido (responsive).</li>
+                <li>Entre bloques de texto al 45% de lectura.</li>
+                <li>Final, como contenido relacionado.</li>
+            </ol>
+
+            <div class="ad-placeholder">
+                <!-- anuncio adsense aquí -->
+                <p class="text-xs uppercase font-semibold text-emerald-600">BLOQUE DE ANUNCIO A MEDIO</p>
+                <p class="text-sm text-slate-500">Bloque 300x250 adaptado para móvil.</p>
+            </div>
+
+            <h2 class="text-2xl font-semibold mb-3">3. Anuncios in-feed y in-article</h2>
+            <p class="mb-4">En móviles, los formatos nativos in-feed y in-article generan más clics válidos y mejoran UX. Google recomienda evitar capas invasivas que hagan que el usuario cierre la página.</p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li>In-feed en listas de posts y sugerencias.</li>
+                <li>In-article para posts largos (>1.000 palabras).</li>
+                <li>Adapta densidad: 1-2 anuncios por post en móvil.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold mb-3">4. Contenido orientado al lector móvil</h2>
+            <p class="mb-4">En móvil, los lectores prefieren respuestas rápidas:</p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li>Usa listas y tablas resumen.</li>
+                <li>Incluye “cómo empezar en 3 pasos”.</li>
+                <li>Agrega recomendaciones complementarias de lectura interna.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">4.1 Ejemplo de sección práctica</h3>
+            <p class="mb-4">"Cómo optimizar un post de 1.000 palabras en móvil" con subtítulos, 2 imágenes ligeras y 1 tabla de benchmarking.</p>
+
+            <h2 class="text-2xl font-semibold mb-3">5. Tests obligatorios</h2>
+            <p class="mb-4">Debes probar en al menos 3 dispositivos reales y 2 herramientas:</p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li>PageSpeed Insights (móvil).</li>
+                <li>WebPageTest (Core Web Vitals).</li>
+                <li>Google Search Console (experiencia mobile).</li>
+            </ul>
+
+            <p class="mb-4">Cada cambio debería medirse con tráfico real. Un incremento de 1s en LCP puede reducir conversiones citas de anuncios.</p>
+
+            <div class="ad-placeholder">
+                <!-- anuncio adsense aquí -->
+                <p class="text-xs uppercase font-semibold text-emerald-600">BLOQUE DE ANUNCIO FINAL</p>
+                <p class="text-sm text-slate-500">728x90 en móvil o 320x100 según espacio.</p>
+            </div>
+
+            <h2 class="text-2xl font-semibold mb-3">6. Monitoreo de RPM específico móvil</h2>
+            <p class="mb-4">Crea un filtro en AdSense para ver RPM móvil vs desktop. Ajusta las posiciones de anuncios basados en las páginas con mayor rendimiento móvil.</p>
+
+            <div class="mt-10 grid md:grid-cols-3 gap-4 text-center">
+                <a href="index.html" class="py-3 px-4 bg-emerald-600 text-white rounded-2xl font-semibold">Volver al inicio</a>
+                <a href="articulo6.html" class="py-3 px-4 bg-emerald-100 text-emerald-700 rounded-2xl font-semibold">Anterior</a>
+                <a href="articulo8.html" class="py-3 px-4 bg-emerald-100 text-emerald-700 rounded-2xl font-semibold">Siguiente</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300 py-10">
+        <div class="max-w-7xl mx-auto px-6 text-sm grid md:grid-cols-2 gap-4">
+            <p>© 2026 AdSenseDesdeCero. Creado para aprender y monetizar con buenas prácticas.</p>
+            <p class="text-right"><a href="index.html" class="text-emerald-400 hover:text-emerald-200">Volver al inicio</a></p>
+        </div>
+    </footer>
+</body>
+</html>
